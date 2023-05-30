@@ -12,12 +12,12 @@ import openai
 
 os.environ['OPENAI_API_KEY'] = apikey
 
-openai.organization = "org-UjxcijgJCopNrk8Fdg8QRZ0L"
+#openai.organization = "org-UjxcijgJCopNrk8Fdg8QRZ0L"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 openai.Model.list()
 # App framework
-st.title('🦜🔗 YouTube GPT Creator')
-prompt = st.text_input('Plug in your prompt here') 
+st.title('👾🖳 YouTube-GPT')
+prompt = st.text_input('what do you want to search about?') 
 
 # Prompt templates
 title_template = PromptTemplate(
